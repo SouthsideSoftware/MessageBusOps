@@ -46,13 +46,13 @@ $ docker-compose up -d
 If you want to start the stack including a RabbitMQ, use:
 
 ```bash
-docker-compose -f docker-compose.yml -f docker-compose-rabbit.yml up
+docker-compose -f docker-compose-rabbit.yml up
 ```
 
 Or, for detached mode:
 
 ```bash
-docker-compose -f docker-compose.yml -f docker-compose-rabbit.yml up -d
+docker-compose -f docker-compose-rabbit.yml up -d
 ```
 
 # Credits
