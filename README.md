@@ -43,6 +43,18 @@ You can also choose to run it in background (detached mode):
 $ docker-compose up -d
 ```
 
+If you want to start the stack including a RabbitMQ, use:
+
+```bash
+docker-compose -f docker-compose.yml -f docker-compose-rabbit.yml up
+```
+
+Or, for detached mode:
+
+```bash
+docker-compose -f docker-compose.yml -f docker-compose-rabbit.yml up -d
+```
+
 # Credits
 
 * This project is based on the Docker ELK stack provided in the [docker-elk](https://github.com/deviantony/docker-elk)
