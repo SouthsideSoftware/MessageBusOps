@@ -55,6 +55,25 @@ Or, for detached mode:
 docker-compose -f docker-compose-rabbit.yml up -d
 ```
 
+Once you startup the containers, you can access the various services as follows:
+
+* Kibana: http://localhost:5601
+* Kibana Sense: http://localhost:5601/app/sense
+* Rabbit Management Console (if you started it with your stack): http://localhost:15672
+
+The stack exposes the following ports:
+
+* 5000: Logstash TCP input
+* 5602: Kibana
+* 5672: RabbitMQ AMQP/TCP (If started)
+* 9200: Elasticsearch HTTP
+* 9300: Elasticsearch TCP
+* 15672: RabbitMQ Management (If started)
+
+_Note that if you are using docker toolbox, substitute the docker-machine host name or IP for localhost._
+
+_Note that if you are using boot2docker, substitute the boot2docker IP address for localhost._
+
 # Credits
 
 * This project is based on the Docker ELK stack provided in the [docker-elk](https://github.com/deviantony/docker-elk)
